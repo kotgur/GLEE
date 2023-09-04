@@ -3,6 +3,98 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    color: #436372;
+    transition: all .3s;
+    @extend %rubik-500;
+    &:hover {
+      color: $accent;
+      font-size: 18px;
+      border-bottom: 1px solid $accent;
+    }
+  }
+
+  &__menu__list-link--active {
+    color: $accent;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    position: relative;
+  }
+
+  &__link+.user-nav__link {
+    padding-left: 60px;
+  }
+
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+    top: -9px;
+    right: -9px;
+    font-size: 10px;
+    color: $defolt;
+    text-align: center;
+    line-height: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'media';
