@@ -17,6 +17,14 @@
   display: flex;
   align-items: center;
   font-size: 16px;
+
+  &__img-title {
+    padding-left: 20px;
+    @extend %rubik-500;
+    font-size: 36px;
+    font-weight: 58px;
+    color: #436372;
+  }
 }
 
 .menu {
@@ -33,6 +41,7 @@
     color: #436372;
     transition: all .3s;
     @extend %rubik-500;
+
     &:hover {
       color: $accent;
       font-size: 18px;
@@ -53,6 +62,16 @@
     position: relative;
   }
 
+  &__link-sourch {
+    width: 50px;
+    height: 50px;
+    border-radius: 99%;
+    border-bottom: 1px;
+    background-color: aqua;
+  }
+
+
+
   &__link+.user-nav__link {
     padding-left: 60px;
   }
@@ -69,6 +88,119 @@
     color: $defolt;
     text-align: center;
     line-height: 18px;
+  }
+}
+
+
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  padding: 75px 0 70px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+
+  &__contact {
+    margin-right: 100px;
+  }
+
+  &__nav {
+    width: 170px;
+    margin-right: 130px;
+  }
+
+  &__item-form {
+    width: 300px;
+  }
+
+  &__logo {
+    width: 220px;
+    margin-bottom: 25px;
+  }
+
+  &__adress,
+  &__phone,
+  &__email {
+    display: block;
+    line-height: 24px;
+    margin-bottom: 10px;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #7b7b7b;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    @extend %dmsans-700;
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 55px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    line-height: 32px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    @extend %rubik-400;
+    margin-bottom: 35px;
+    margin-top: 10px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__form-input {
+    background-color: $bg;
+    max-width: 170px;
+    width: 100%;
+    border: none;
+    padding: 12px 10px 12px 15px;
+
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    background-color: $accent;
+    border: none;
+    color: #000;
+    @extend %dmsans-400;
+    font-size: 14px;
+    padding: 12px 18px 14px 16px;
+    cursor: pointer;
+  }
+}
+
+.footer-bootom {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__copy {
+    margin: 35px 10px;
+    font-size: 14px;
+    line-height: 32px;
+    @extend %rubik-400;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link+.footer-bootom__link {
+    margin-left: 30px;
   }
 }
 

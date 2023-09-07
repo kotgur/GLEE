@@ -10,3 +10,11 @@ max-width: 1800px;
 margin: 0 auto;
 padding: 0 15px;
 }
+
+a{
+  line-height: 24px;
+  margin-bottom: 15px;
+  @extend %rubik-400;
+  font-size: 14px;
+  color: #7b7b7b;
+}
