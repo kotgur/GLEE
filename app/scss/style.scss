@@ -65,13 +65,12 @@
   &__link-sourch {
     width: 50px;
     height: 50px;
-    border-radius: 99%;
+    border-radius: 50%;
     border-bottom: 1px;
-    background-color: aqua;
+    background-color: #edf1f4;
   }
 
-
-
+  
   &__link+.user-nav__link {
     padding-left: 60px;
   }
