@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -39,6 +40,7 @@
 
   &__list-link {
     color: #436372;
+    padding: 0 2px 1px;
     transition: all .3s;
     @extend %rubik-500;
 
@@ -63,6 +65,7 @@
   }
 
   &__link-sourch {
+    position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -70,7 +73,7 @@
     background-color: #edf1f4;
   }
 
-  
+
   &__link+.user-nav__link {
     padding-left: 60px;
   }
@@ -89,8 +92,6 @@
     line-height: 18px;
   }
 }
-
-
 
 .footer {
   max-width: 1200px;
@@ -203,7 +204,96 @@
   }
 }
 
+.top-slider {
+  background-color: #fcd7b6;
+  padding-top: 85px;
+  height: 800px;
 
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    max-height: 800px;
+  }
+
+  &__content {
+    padding-left: 220px;
+    padding-top: 110px;
+  }
+
+  &__title {
+    max-width: 420px;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    color: $defolt;
+    @extend %rubik-500;
+  }
+
+  &__text {
+    max-width: 315px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    @extend %rubik-400;
+    color: #436372;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: $accent;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    @extend %rubik-500;
+    padding: 21px 20px 22px;
+    width: 200px;
+    height: 60px;
+
+    &__button-img {
+      width: 24px;
+    }
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    li {
+      padding: 0 5px;
+
+      button {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fde3cc;
+        @extend %rubik-500;
+        font-size: 11px;
+        line-height: 9px;
+        color: $defolt;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+          border-radius: 50%;
+        }
+
+      }
+    }
+  }
+
+}
 
 
 
