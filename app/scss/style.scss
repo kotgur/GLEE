@@ -68,7 +68,6 @@
     height: 50px;
     background-color: #edf1f4;
     border-radius: 50%;
-
   }
 
   &__link-sourch {
@@ -85,8 +84,6 @@
     border-radius: 50px;
     margin: 0 20px;
     display: flex;
-
-
   }
 
   &__link-hearth {
@@ -131,11 +128,7 @@
     align-items: center;
   }
 
-
-
 }
-
-
 
 .footer {
   max-width: 1200px;
@@ -253,6 +246,25 @@
     border-left: 1px solid #7b7b7b;
     padding-left: 23px;
   }
+}
+
+.top{
+  &__container{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 80px 0 90px;
+    text-align: center;
+  }
+  &__title{
+    @extend %rubik-500;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 30px;
+}
 }
 
 .top-slider {
