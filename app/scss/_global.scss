@@ -33,35 +33,24 @@ a{
 .breadcrumbs{
   display: inline-flex;
   justify-content: center;
-  padding-left: 25px;
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    background-image: url(../images/icon/home_icon.svg);
-    width: 16px;
-    height: 16px;
-    left: 0;
-    top: 1px;
-  }
+  padding-left: 0;
+
   &__list{
     display: flex;
   }
   &__item{
     @extend %rubik-400;
-    color: #a4a9ae;
+    color: #9ca1a7;
     font-size: 14px;
     line-height: 24px;
     padding-right: 40px;
     position: relative;
     &::after{
-      content: "";
+      content: "/";
       position: absolute;
-      background-image: url(../images/icon/angle_right.svg);
-      width: 9px;
-      height: 10px;
-      right: 15px;
-      top: 8px;
+      font-size: 26px;
+      right: 16px;
+      top: 2px;
     }
     &:last-child{
       color: #fe3e57;
