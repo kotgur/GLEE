@@ -79,44 +79,33 @@
         </div>
       </div>
     </section>
+
     <section class="modal">
-      <container class="modal__container">
-        <div class="modal__form" action="#">
-          <label class="modal__label">Username or email address *
+      <div class="container">
+        <div class="modal__links">
+          <a class="modal__link" href="#">REGISTER</a>
+          <a class="modal__link modal__link--active" href="#">LOGIN</a>
+        </div>
+        <form class="modal__form" action="#">
+          <label class="modal__label">Username or email address*
             <input class="modal__input" type="text" required>
           </label>
-          <label class="modal__label">Password *
+          <label class="modal__label">Password*
             <input class="modal__input" type="password" required>
           </label>
-          <button class="modal__btn" href="#">Login</button>
-          <input class="modal__inputcheckbox" type="checkbox">
-          Remember me Lost your password?
-          <a class="modal__newaccount" href="#">Not registered? No problem</a>
-          <button class="modal__newbtn" href="#">Create an account</button>
-        </div>
-      </container>
-    </section>
-    <section class="partners">
-      <div class="partners__container">
-        <div class="partners__items">
-         <a class="partners__itemlink" href="#">
-          <img src="images/blog/partners1.png" alt="partners image">
-         </a>
-         <a class="partners__itemlink" href="#">
-          <img src="images/blog/partners2.png" alt="partners image">
-         </a>
-         <a class="partners__itemlink" href="#">
-          <img src="images/blog/partners3.png" alt="partners image">
-         </a>
-         <a class="partners__itemlink" href="#">
-          <img src="images/blog/partners4.png" alt="partners image">
-         </a>
-         <a class="partners__itemlink" href="#">
-          <img src="images/blog/partners5.png" alt="partners image">
-         </a>
-        </div>
+          <label class="modal__label">
+            <input type="checkbox">
+            Remember me
+          </label>
+          <button class="modal__btn" type="submit">LOG IN</button>
+          <a class="modal__errorpassword" href="#">Lost your password?</a>
+
+        </form>
+
+
       </div>
     </section>
+
 
   </main>
   <footer class="footer">
