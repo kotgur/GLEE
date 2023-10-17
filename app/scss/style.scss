@@ -794,6 +794,10 @@
   max-width: 570px;
   margin: 0 auto 115px;
 
+  &__form {
+    font-weight: normal;
+  }
+
   &__links {
     text-align: center;
 
@@ -831,6 +835,7 @@
     background-color: #f6f6f6;
     margin-top: 10px;
     padding: 0 15px;
+
   }
 
   &__btn,
@@ -851,10 +856,7 @@
 
   &__inputcheckbox {
     margin-bottom: 20px;
-
-   
   }
-
 
   &__newbtn {
     background-color: #fff;
@@ -874,7 +876,6 @@
     color: #436372;
   }
 
-
   &__errorpassword {
     display: inline-block;
     margin-top: 10px;
@@ -882,10 +883,16 @@
     font-size: 16px;
     color: #fe3e57;
   }
+
+  &__text {
+    margin-bottom: 25px;
+    font-weight: normal;
+  }
 }
 
-.partners{
-  &__container{
+.partners {
+  &__container {
+    margin: 0 auto;
     max-width: 1920px;
     width: 100%;
     height: 250px;
@@ -893,11 +900,19 @@
     margin-top: 110px;
     margin-bottom: 70px;
   }
-  &__items{
+
+  &__item{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-   padding: 80px 200px;
+    padding: 80px 90px;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
   }
+
 }
 
 
