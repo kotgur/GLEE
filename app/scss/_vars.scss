@@ -44,3 +44,7 @@ $bg: #fef7f0;
 @function min($numbers...) {
  @return m#{i}n(#{$numbers});
 }
+
+.header--404-page{
+  background-color: $bg;
+}
